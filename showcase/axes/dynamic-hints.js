@@ -59,7 +59,11 @@ export default class Example extends React.Component {
         <MarkSeries
           onValueMouseOver={this._rememberValue}
           onValueMouseOut={this._forgetValue}
-          data={[{x: 1, y: 10}, {x: 2, y: 5}, {x: 3, y: 15}]}
+          data={[
+            {x: 1, y: 3, color: 0},
+            {x: 2, y: 5, color: 1},
+            {x: 3, y: 1, color: 0}
+          ]}          colorRange={["#ff0000", "#0000ff"]}
         />
         {value ? <Hint value={value} /> : null}
       </XYPlot>

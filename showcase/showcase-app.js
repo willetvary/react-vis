@@ -3,105 +3,14 @@ import PropTypes from 'prop-types';
 import ShowcaseDropdown from './showcase-components/showcase-dropdown';
 
 import {
-  AxesShowcase,
-  PlotsShowcase,
-  SunburstSection,
-  RadialShowcase,
-  RadarShowcase,
-  LegendsShowcase,
-  SankeysShowcase,
-  TreemapShowcase,
-  ParallelCoordinatesShowcase,
-  MiscShowcase,
-  Candlestick,
-  ForceDirectedGraph,
-  ResponsiveVis,
-  StreamgraphExample,
-  IrisDashboard,
+  AxesShowcase
 } from './showcase-index';
 
 const sectionNames = [
   {root: true, link: '', name: 'RETURN TO ROOT'},
   // basic examples
   {label: true, name: 'BASIC EXAMPLES'},
-  {showByDefault: true, link: 'plots', name: 'Plots', showcase: PlotsShowcase},
-  {showByDefault: true, link: 'axes', name: 'Axes', showcase: AxesShowcase},
-  {
-    showByDefault: true,
-    link: 'radial-charts',
-    name: 'Radial Charts',
-    showcase: RadialShowcase
-  },
-  {
-    showByDefault: true,
-    link: 'radar-charts',
-    name: 'Radar Charts',
-    showcase: RadarShowcase
-  },
-  {
-    showByDefault: true,
-    link: 'treemaps',
-    name: 'Treemaps',
-    showcase: TreemapShowcase
-  },
-  {
-    showByDefault: true,
-    link: 'legends',
-    name: 'Legends',
-    showcase: LegendsShowcase
-  },
-  {
-    showByDefault: true,
-    link: 'sunbursts',
-    name: 'Sunbursts',
-    showcase: SunburstSection
-  },
-  {
-    showByDefault: true,
-    link: 'sankeys',
-    name: 'Sankeys',
-    showcase: SankeysShowcase
-  },
-  {
-    showByDefault: true,
-    link: 'parallel-coordinates',
-    name: 'Parallel Coordinates',
-    showcase: ParallelCoordinatesShowcase
-  },
-  {showByDefault: true, link: 'misc', name: 'Misc', showcase: MiscShowcase},
-
-  // in depth examples
-  {label: true, name: 'ADVANCED EXAMPLES'},
-  {
-    showByDefault: false,
-    link: 'candlestick',
-    name: 'Candlestick',
-    showcase: Candlestick
-  },
-  {
-    showByDefault: false,
-    link: 'force-directed',
-    name: 'ForceDirectedGraph',
-    showcase: ForceDirectedGraph
-  },
-  {
-    showByDefault: false,
-    link: 'streamgraph',
-    name: 'Streamgraph',
-    showcase: StreamgraphExample
-  },
-  {
-    showByDefault: false,
-    link: 'irisdashboard',
-    name: 'IrisDashboard',
-    showcase: IrisDashboard
-  },
-  {
-    showByDefault: false,
-    link: 'responsive',
-    name: 'ResponsiveVis',
-    showcase: ResponsiveVis
-  }
+  {showByDefault: true, link: 'axes', name: 'Axes', showcase: AxesShowcase}
 ];
 
 function App(props) {
